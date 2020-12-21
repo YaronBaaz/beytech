@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BeyTech</title>
+        <link rel="icon" type="image/png" href="Images/bey tech logo.png"/>
+        <!-- Media query for narrow browser width -->
+        <link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css">
+        <!-- Media query for medium browser width -->
+        <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="css/tablet.css">
+        <!-- Media query for IPAD browser width -->
+        <link rel="stylesheet" media="only screen and (min-width: 961px) and (max-width: 1024px)" href="css/ipad.css">
+        <link rel="stylesheet"  media="only screen and (min-width: 1025px)" href="css/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="script.js"  defer></script>
+    </head>
+    <body>
+        <div style="position: fixed;  z-index: 4;">
+        <div class="preNavBanner">
+            <div> <i style="font-size:20px;" class="fa">&#xf095;</i> <span style="position: relative; top:-2px">877-393-4448</span>   &nbsp; &nbsp; 
+                <i class="fa fa-envelope" style="font-size:20px "></i> <span style="position: relative; top:-2px"> &nbsp; johndoe@gmail.com </span></div>
+        </div>
+
+        <nav class="nav">
+            <div class="nav1"> 
+                <section class="logo" > <a href="index.html" id="logotext">
+                    <img id="logopic" src="Images/689626fc-fbb3-4a54-9865-783afdb36048_200x200.png" alt="logo">
+                    BeyTech</a>
+                </section>
+                <ul>
+                    <li class="dropdown">
+                        Courses<span style="font-size: 12px;"> &#x25BC;</span>
+                        <div class="dropdown-content">
+                            <p><a href="#math">Math Enrichment</a></p>
+                            <div id="dropside"><p><a href="#robotics">Robotics &emsp; &emsp; &#9658;</a></p>
+                                <div class="side"> <p id="dropside-element"><a href="projects.html"> Projects</a></p> </div></div>
+
+                                <div id="dropside"><p><a href="#coding">Coding &nbsp; &#x200b;   &emsp; &emsp; &#9658;</a></p>
+                                    <div class="side side2"> <p id="dropside-element2"><a href="code.html"> Webpage Examples</a></p> </div></div>
+                            <p><a href="#design">Design</a></p>
+                        </div>
+                    </li>
+                  </ul> 
+            </div>
+            <div class="nav2">
+                <ul>
+                    <li ><a href="index.html" class="active">Home</a></li>
+                    <li ><a href="about.html">About Us</a></li>
+                    <li style="margin-right: 7.5vw;"><a href="contact.html"> Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- JUMBOTRON-->
+
+        <div class="jumbotron">
+            <div class="image-container" id="imgs"> 
+                <img src="images/robotics background.jpg" alt="">
+                <img src="images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg" alt="">
+                <img src="images/annie-spratt-JexAuNCfefs-unsplash.jpg" alt="">
+            </div>
+            
+            
+            <div id="overlay">
+                <h1 id="h1"></h1>
+                
+                <p>Learn to code, build a robot,
+                    become a math expert,
+                    create & 3D print</p>
+
+                <a href="contact.html"> <button id="btn">NYC OFFER</button></a>
+            </div>
+        </div>
+
+        <br>
+        <hr class = "cloud">
+
+        <!-- COURSES-->
+
+        <div class="courses">
+            
+            <section class="title">
+                <h2 id="math"> Math Enrichment</h2>
+            </section>
+             
+            <div class="course">  
+                
+                <section id="filler"></section>
+                <section id="text">
+                    <p> &emsp; Understand the logical prinicipals behind the math you already know. Challenge yourself to understand concepts 2-3 grades above your peers. <br> <br>
+                        &emsp; Math levels from first grade all the way to calculus. All math levels are accomindated for.
+                    </p>
+                </section>
+                <section id="pic">
+                    <img src="Images/chris-liverani-ViEBSoZH6M4-unsplash.jpg" alt="">
+                </section>
+                <section id="filler" ></section>
+            </div>
+
+            <section class="title" id="two" >
+                <h2 id="robotics" > Robotics</h2>
+            </section>
+            
+            <div class="reverse course"> 
+                
+                
+                <section id="filler"></section>   
+                <section id="text">
+                    
+                    <p> &emsp;
+                        Learn how to operate iOt devices like the Arduino.
+                        <br><br> &emsp; Develop a sharp knowledge of electronics. Engineer a self driving car, make a multicolored/variable nightlight, or a color sorter. 
+                        <br> <br> &emsp; The possibilites are endless! Click below or on the picture to see some of the projects students have worked on.</p>
+                        <br><a href="projects.html"><button id="btn2" > Robotics Projects</button></a>
+                </section>
+                <section id="pic">
+                    <img src="images/lucas-santos-Qdvm-Qr1FYw-unsplash.jpg" alt="">
+                </section>
+                <section id="filler"></section>
+            </div>
+
+            <section class="title">
+                <h2 id="coding"> Coding</h2>
+            </section>
+            <div  class="course">   
+                <section id="filler"></section> 
+                <section id="text">
+                    
+                    <p> &emsp;
+                        Write programs that do your homework. Create games and websites. See code logically through algorithms.
+                        <br><br> &emsp; From Python to HTML / CSS / JavaScript, a whole world of possibilies is now reality. See for yourself! Click below and you will see some of the projects the students have worked on.
+                        <br><br>
+                    </p>
+                    <a href="code.html"><button id="btn2" > Webpage Examples</button></a>
+                </section>
+                <section id="pic">
+                    <img src="images/coding.jpg" alt="">
+                </section>
+                <section id="filler"></section>
+            </div>
+
+            <section class="title">
+                <h2 id="design"> Design</h2>
+            </section>
+            <div class="reverse course">  
+                <section id="filler"></section>  
+                <section id="text">
+                    
+                    <p> &emsp;Get an understanding of architecture &amp; engineering using TinkerCAD. Design your own creations. Learn to operate and make your designs come to life with 3D printing.
+
+                    </p>
+                </section>
+                <section id="pic">
+                    <img src="images/xiaole-tao-Fo-HQUlRGkU-unsplash.jpg" alt="">
+                </section>
+                <section id="filler"></section>
+            </div>
+        </div>
+
+        <br>
+        <hr class = "cloud">
+
+        <!-- CONTACT US BANNER-->
+
+        <div class="banner" > 
+            <div style="z-index: -1;">
+                <img src="images/sergey-zolkin-_UeY8aTI6d0-unsplash.jpg" alt="">
+            </div>
+           <div class="overlay2">
+            <h1 id="bannertext">Interested? <span>Contact</span> Us </h1> 
+            <br> 
+            <a href="contact.html"> <button id="btn2">Contact Page</button> </a>
+           </div>
+        </div>
+
+        <br>
+        <hr class = "cloud">
+        <br>
+
+        <!-- END Banner-->
+
+        <div class="endbanner">
+            <div> 
+                <span style="border-bottom:1px solid white; font-weight: bold;">Pages</span>
+                <a href="">Contact us</a>
+                <a href="">About Us</a>
+                <a href="">Robotics Projects</a>
+                <a href="">Webpage Examples</a>
+                <a href="">Home</a>
+            </div>
+            <div> </div>
+            <div> <img src="images/689626fc-fbb3-4a54-9865-783afdb36048_200x200.png" style="width: 22vw;" alt=""></div>
+        </div>
+
+        <!-- Contribution-->
+
+        <div class="contribution">
+          Copyright  &#169; 2020 BeyTech | Developed by Yaron Baazov
+        </div>
+
+        
+       
+       
+    </body>
+</html>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
