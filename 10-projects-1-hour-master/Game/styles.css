@@ -1,0 +1,27 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    min-height: 100vh;
+    background-color: rgb(129, 149, 238);
+}
+
+#box{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(8, 17, 138);
+    cursor: pointer;
+    position: fixed;
+    transition: top 0.5s ease, left 0.5s ease, background-color .5s ease-in-out;  
+}
+#counter{
+    font-size: 32px;
+    position: fixed;
+    top: 10px;
+    right: 25px;
+    z-index: 2;
+}
