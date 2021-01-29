@@ -85,7 +85,7 @@ function run() {
 setInterval(run, 4000);
 
 /* Text on middle */
-const text = "BeyTech Tutoring";
+const text = "LyTech Tutoring";
 const h1 = document.getElementById("h1")
 
 let index = 0;

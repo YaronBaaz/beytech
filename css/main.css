@@ -22,8 +22,13 @@ body {
     background-color: rgba(30, 88, 175, 0.432) !important;
 }
 
+nav{
+  height: 65px;
+}
+
 .navbar{
   background-color: #092a46 !important;
+  
 
 }
 

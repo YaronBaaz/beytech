@@ -21,7 +21,7 @@ console.log(window.innerWidth)
                 
                 
               }else{
-                $('nav').css("height","75px")
+                $('nav').css("height","65px")
                 $('#logopic').css("width", "65px")
                 $('#logotext').css("font-size", "30px")
                 $('li').css("font-size", "18px")
@@ -65,8 +65,10 @@ console.log(window.innerWidth)
                 check=false;
             }
         }
+        
 
         return check;
+        
     });
 
 
@@ -77,29 +79,52 @@ console.log(window.innerWidth)
     });
 
     function validate (input) {
+        
         if($(input).attr('type') == 'email' || $(input).attr('name') == 'email') {
             if($(input).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
                 return false;
+                
             }
+            
         }
         else {
             if($(input).val().trim() == ''){
                 return false;
             }
+           
+            
         }
+        
     }
 
     function showValidate(input) {
         var thisAlert = $(input).parent();
-
+        
         $(thisAlert).addClass('alert-validate');
+        
     }
 
     function hideValidate(input) {
         var thisAlert = $(input).parent();
-
+        
         $(thisAlert).removeClass('alert-validate');
     }
     
 
 })(jQuery);
+
+const submit= document.getElementById("contact100-form-btn");
+
+
+
+submit.addEventListener("click", () => {
+    const email = document.getElementById("email").value;
+    const nameval = document.getElementById("name").value;
+    const message = document.getElementById("message").value;
+    if (email == "" || nameval == "" || message == ""){
+    
+    }
+    else{var myText = "Application Submitted.";
+    alert (myText);}
+    
+});
